@@ -1,0 +1,125 @@
+/* 🌞 Light Mode (default) */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🌙 Dark Mode */
+  body.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* 📌 Main Container */
+  .app-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  /* 📌 Header */
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* 📌 Buttons */
+  button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  /* Light Mode Button */
+  button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Dark Mode Button */
+  body.dark button {
+    background-color: #ffcc00;
+    color: black;
+  }
+  
+  /* 📌 Expense Form */
+  .expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .expense-form input,
+  .expense-form select,
+  .expense-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Dark Mode Form */
+  body.dark .expense-form input,
+  body.dark .expense-form select {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  /* 📌 Expense List */
+  .expense-list {
+    margin-top: 20px;
+  }
+  
+  /* 📌 Expense Item */
+  .expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  /* Dark Mode Expense Item */
+  body.dark .expense-item {
+    background: #222;
+  }
+  
+  /* 📌 Category Styling */
+  .category {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* 📌 Delete Button */
+  .expense-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .expense-item button:hover {
+    background-color: darkred;
+  }
+  
+  /* 📌 Responsive Design */
+  @media (max-width: 600px) {
+    .expense-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
